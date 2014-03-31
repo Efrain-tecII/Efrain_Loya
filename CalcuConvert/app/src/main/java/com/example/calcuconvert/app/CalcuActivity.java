@@ -155,14 +155,8 @@ String TipoCalculo;
             @Override
             public void onClick(View view) {
                 ValorTotal = (String) Resultado.getText();
-                String sTexto = ValorTotal;
-                // Texto que vamos a buscar
-                String sTextoBuscado = ".";
 
-                if (sTexto.indexOf(sTextoBuscado)==-1) {
-                    Resultado.setText((String) ValorTotal + (String) Punto.getText());
-                }
-
+                Resultado.setText((String) ValorTotal + (String) Punto.getText());
             }
         });
 
